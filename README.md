@@ -29,7 +29,7 @@ The model's target accuracy was 75% or more.
 
 2 Hidden Layers were created to allow the neurons to train on previous input values and identify complex nonlinear patterns. The first hidden layer has 90 neurons, since its a good rule of thumb to have 2-3 times neurons as the number of inputs, 43. The ReLU activation function was selected for the hidden layers because of its efficiency and ability to train on nonlinear data. The Sigmoid activation function was selected for the output layer because its ideal for binary classification. 
 
-1. Original Neural Network Model:
+#### 1. Original Neural Network Model:
 - Input Features: 43
 - Hidden Layer 1: 90 Neurons
 - Hidden Layer 2: 45 Neurons
@@ -37,7 +37,9 @@ The model's target accuracy was 75% or more.
 
 <img width="529" alt="nn_model1" src="https://user-images.githubusercontent.com/78664640/124469610-9325d700-dd68-11eb-8c0b-a15dd97ef1a0.png">
 
-The image above shows that the model was unable to meet the target accuracy performance of 75%. In an attempt to increase the model's accuracy performance, the following methods were used:
+The image above shows that the model was unable to meet the target accuracy performance of 75%. 
+
+In an attempt to increase the model's accuracy performance, the following methods were used:
 
 #### 2. Optimization Attempt 1: Remove Noisy Variable
 - Removed APPLICATION_TYPE_Other column
