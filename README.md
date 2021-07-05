@@ -27,7 +27,7 @@ Features Removed:
 ### Compiling, Training, and Evaluating the Model
 The model's target accuracy was 75% or more. 
 
-2 Hidden Layers were created to allow the neurons to train on previous input values and identify complex nonlinear patterns. The first hidden layer has 90 neurons, since its a good rule of thumb to have 2-3x neurons as the number of inputs, 43. The ReLU activation function was selected for the hidden layers because of its efficiency and ability to train on nonlinear data. The Sigmoid activation function was selected for the output layer because its ideal for binary classification. 
+2 Hidden Layers were created to allow the neurons to train on previous input values and identify complex nonlinear patterns. The first hidden layer has 90 neurons, since its a good rule of thumb to have 2-3 times neurons as the number of inputs, 43. The ReLU activation function was selected for the hidden layers because of its efficiency and ability to train on nonlinear data. The Sigmoid activation function was selected for the output layer because its ideal for binary classification. 
 
 1. Original Neural Network Model:
 - Input Features: 43
@@ -39,7 +39,7 @@ The model's target accuracy was 75% or more.
 
 The image above shows that the model was unable to meet the target accuracy performance of 75%. In an attempt to increase the model's accuracy performance, the following methods were used:
 
-2. Optimization Attempt 1: Remove Noisy Variable
+#### 2. Optimization Attempt 1: Remove Noisy Variable
 - Removed APPLICATION_TYPE_Other column
 
 <img width="517" alt="nn_model2" src="https://user-images.githubusercontent.com/78664640/124469652-9e790280-dd68-11eb-88c3-a3b0d7f13fce.png">
@@ -47,7 +47,7 @@ The image above shows that the model was unable to meet the target accuracy perf
 The image above shows an improvement to the accuracy, however it was still unable to meet the target accuracy performance of 75%. 
 
 
-3. Optimization Attempt 2: Add Neurons to Hidden Layers
+#### 3. Optimization Attempt 2: Add Neurons to Hidden Layers
 - Hidden Layer 1: 120 Neurons
 - Hidden Layer 2: 60 Neurons
 
@@ -55,7 +55,7 @@ The image above shows an improvement to the accuracy, however it was still unabl
 
 The image above shows a decrease to the accuracy and failed to meet the target accuracy performance of 75%. 
 
-4. Optimization Attempt 3: Additional Hidden Layer
+#### 4. Optimization Attempt 3: Additional Hidden Layer
 - Hidden Layer 1: 90 Neurons
 - Hidden Layer 2: 45 Neurons
 - Hidden Layer 3: 5 Neurons
@@ -65,7 +65,7 @@ The image above shows a decrease to the accuracy and failed to meet the target a
 The image above shows a decrease to the accuracy and failed to meet the target accuracy performance of 75%. 
 
 
-5. Optimization Attempt 4: Change Activation Function 
+#### 5. Optimization Attempt 4: Change Activation Function 
 - Activation Function: Sigmoid for all layers
 
 <img width="509" alt="nn_model5" src="https://user-images.githubusercontent.com/78664640/124469776-c6686600-dd68-11eb-84c1-bd55ebc89211.png">
